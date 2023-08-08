@@ -9,15 +9,43 @@ body {
 }
 
 .sidebar {
-    font-size: 3rem;
-    font-family: 'Delicious Handrawn', sans-serif;
     width: 30%;
     background-image: url('images/beach-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    padding-top: 10%;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-family: 'Delicious Handrawn', sans-serif;
+    display: flex;
+    color: aliceblue;
+    background-color: rgb(50, 80, 80, 0.8);
+    align-items: center;
+    justify-content: center;
+    height: 8rem;
+}
+
+#palm-tree {
+    width: 25%;
+    height: 50%;
 }
 
 .container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 70%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+
+.upper-text {
+    font-weight: bolder;
+}
+
+.forms fieldset {
+    width: 10%;
 }

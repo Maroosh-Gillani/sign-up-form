@@ -10,17 +10,48 @@
 
 <body>
     <div class="sidebar">
-        <h1>Beach</h1>
+        <div class="title">
+            <img src="images/tree-logo.png" alt="Palm Tree Art" id="palm-tree">
+            <h1>Beach</h1>
+        </div>
     </div>
     <div class="container">
-        <p>
-            This is not a real online service! 
-            You know you need something like this in your life to help your deepest dreams. 
-            Sign up <em>now</em> to get started. 
-            You <em>know</em> you want to.
-        </p>
-        <di class="forms">
-            <h3>Let's do this!</h3>
+        <div class="upper-text">
+            <p>
+                This is not a real online service!
+                You know you need something like this in your life to help your deepest dreams.
+                Sign up <em>now</em> to get started.
+            </p>
+            <p>
+                You <em>know</em> you want to.
+            </p>
+        </div>
+
+        <div class="forms">
+            <fieldset>
+                <legend>Let's do this!</legend>
+                <form>
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" name="first-name" type="text" required placeholder="Enter first name.">
+
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" name="last-name" type="text" required placeholder="Enter last name.">
+
+                    <label for="mail">Email</label>
+                    <input id="mail" name="mail" type="email" required placeholder="someone@example.com">
+
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="0123456789">
+
+                    <label for="pwd">Password</label>
+                    <input id="pwd" name="pwd" type="password" required>
+                    
+                    <label for="confirm-pwd">Confirm Password</label>
+                    <input id="confirm-pwd" name="confirm-pwd" type="password" required>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </fieldset>
         </div>
     </div>
 </body>
