@@ -17,7 +17,7 @@ body {
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-family: 'Delicious Handrawn', sans-serif;
     display: flex;
     color: aliceblue;
@@ -28,8 +28,8 @@ body {
 }
 
 #palm-tree {
-    width: 25%;
-    height: 50%;
+    width: 20%;
+    height: 60%;
 }
 
 .container {
@@ -37,15 +37,64 @@ body {
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    padding: 5%;
 }
 
 .upper-text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 25%;
     font-weight: bolder;
 }
 
-.forms fieldset {
-    width: 10%;
+.forms {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(233, 233, 233);
+    padding: 0 25% 2.5% 5%;
+    flex-wrap: wrap;
+    /* Allow flex items to wrap */
+}
+
+/* Style for input fields */
+.row {
+    display: flex;
+}
+
+.input {
+    width: calc(50% - 0.5rem);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+}
+
+.input label {
+    display: block;
+    /* Ensure labels stack below inputs */
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+}
+
+.input input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    margin-top: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input:invalid {
+    border: 2px dashed red;
 }
