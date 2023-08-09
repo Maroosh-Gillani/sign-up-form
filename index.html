@@ -48,23 +48,37 @@
                     </div>
                     <div class="input">
                         <label for="phone">Phone Number</label>
-                        <input id="phone" name="phone" type="tel" required pattern="[0-9]{10}" placeholder="0123456789">
+                        <input id="phone" name="phone" type="tel" required pattern="(\(\d{3}\)\s?\d{3}\s?\d{4}|\d{10})"
+                            placeholder="(XXX) XXX XXXX">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="input">
                         <label for="pwd">Password</label>
-                        <input id="pwd" name="pwd" type="password" required>
+                        <input id="pwd" name="pwd" type="password" required placeholder="At least 4 characters."
+                            minlength="4">
                     </div>
                     <div class="input">
                         <label for="confirm-pwd">Confirm Password</label>
-                        <input id="confirm-pwd" name="confirm-pwd" type="password" required>
+                        <input id="confirm-pwd" name="confirm-pwd" type="password" required
+                            placeholder="Retype your password." minlength="4">
+                    </div>
+                    <div class="error">
+                        <!-- For when password double checking is implemented -->
                     </div>
                 </div>
 
                 <button type="submit">Create Account</button>
             </form>
+        </div>
+        <div class="login">
+            <p>
+                Already have an account?
+            </p>
+            <p class="login-button">
+                Log in
+            </p>
         </div>
     </div>
 </body>
